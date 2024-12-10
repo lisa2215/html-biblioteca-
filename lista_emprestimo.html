@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMPRÉTIMOS</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/navegacao.css">
+    <link rel="stylesheet" href="css/listagem.css">
+</head>
+<body onload="recuperarListaEmprestimo()">
+    <header>
+        <nav>
+            <th><img class="Livro" src="assets/imagens/livro.logo.bibliotech.png"></img></th>
+            <a href="inicio.html">INICIO</a>
+            <a href="lista_aluno.html">ALUNO</a>
+            <a href="lista_livro.html">ACERVO</a>
+            <a href="lista_emprestimo.html">EMPRÉSTIMO</a>
+        </nav>
+    </header>
+    <div class="painel">
+        <div class="esquerda">
+            <div>
+                <a href="cadastro_emp.html">NOVO EMPRÉSTIMO</a>
+            </div>
+        </div>
+   
+        <div class="meio">
+            <h1>EMPRÉSTIMO</h1>
+        </div>
+        <div class="direita"></div>
+    </div>
+    <div class="container-tabela">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID EMPRÉSTIMO</th>
+                    <th>ID ALUNO</th>
+                    <th>ID LIVRO</th>
+                    <th>DATA EMPRÉSTIMO</th>
+                    <th>DATA DEVOLUÇÃO</th>
+                    <th>STATUS EMPRÉSTIMO</th>
+                    <th>AÇÕES</th>
+                </tr>
+            </thead>
+            <tbody id="tabelaEmprestimo">
+              
+            </tbody>
+        </table>
+    </div>
+    <script src="js/emprestimo.js"></script>
+</body>
+</html>

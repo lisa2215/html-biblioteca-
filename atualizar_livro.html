@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atualizar livro</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/navegacao.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <th><img class="Livro" src="assets/imagens/livro.logo.bibliotech.png"></img></th>
+            <a href="inicio.html">INICIO</a>
+            <a href="lista_aluno.html">ALUNO</a>
+            <a href="lista_livro.html">ACERVO</a>
+            <a href="lista_emprestimo.html">EMPRÉSTIMO</a>
+        </nav>
+    </header>
+    <h1>ATUALIZAR LIVRO</h1>
+    <div class="container-formulario">
+        <form action="">
+            <label>
+                TÍTULO
+                <br>
+                <input type="text" name="input-titulo-livro" placeholder="Informe o título do livro" required>
+            </label>
+            <label>
+                AUTOR
+                <br>
+                <input type="text" name="input-autor-livro" placeholder="Informe o autor do livro" required>
+            </label>
+            <label>
+                EDITORA
+                <br>
+                <input type="number" name="input-editora-livro" placeholder="Informe a editora  do livro" required>
+            </label>
+            <label>
+                ANO DE PUBLICAÇÃO
+                <br>
+                <input type="text" name="input-ano-publicacao" placeholder="Informe o ano de publicação" required>
+            </label>
+            <label>
+                ISBN
+                <br>
+                <input type="text" name="input-isbn" placeholder="Informe o ISBN" required>
+            </label>
+            <label>
+                QUANTIDADE TOTAL
+                <br>
+                <input type="text" name="input-quantidade-total" placeholder="Informe a qauntidade total" required>
+            </label>
+            
+            <main>
+        
+                <button onclick="cadastrar()">ATUALIZAR</button>
+                
+            </main>
+            <script>
+                function cadastrar(){
+                    alert("Livro atualizado com sucesso!")
+                }
+    
+            </script>
+            
+        </form>
+    </div>
+    <script src=""></script>
+</body>
+
+</html>
